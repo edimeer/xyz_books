@@ -1,0 +1,41 @@
+<section id="features" class="mt-10 mb-10">
+  <div class="container flex mx-auto px-4">
+    <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+      Search Result
+    </h2>
+  </div>
+  <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+
+    <div class="flex flex-col space-y-12 md:w-1/3">
+      <%= image_tag(book.image_url || '', :class=>"w-auto") %>
+    </div>
+    <div class="flex flex-col space-y-8 md:w-2/3">
+      <div class="flex flex-col space-y-12 pl-10">
+        <h3 class="text-3xl font-bold md:mb-4">
+          <%= book.title %>
+        </h3>
+        <p class="font-bold">
+          <%= book.authors.map { |author| author.full_name }.join(", ") %>
+        </p>
+        <div class="flex flex-col space-y-2">
+          <p class="font-bold">
+            Edition: <span class="text-blue-600"><%= book.edition %></span>
+          </p>
+          <p class="font-bold">
+            Price: <span class="text-blue-600">PHP <%= book.list_price %></span>
+          </p>
+          <p class="font-bold">
+            ISBN: <span class="text-blue-600"><%= book.isbn_13 %></span>
+          </p>
+          <p class="font-bold">
+            Publication Year: <span class="text-blue-600"><%= book.publication_year %></span>
+          </p>
+          <p class="font-bold">
+            Publisher: <span class="text-blue-600"><%= book.publisher.name %></span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
