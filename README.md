@@ -1,6 +1,6 @@
 # XYZ Books
 
-**Project Description:** A brief description of what your project does and who it's for.
+**Project Description:** A coding challenge from Montani International Inc.
 
 ## Table of Contents
 - [Requirements](#requirements)
