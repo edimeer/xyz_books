@@ -8,6 +8,9 @@
 - [Migrations and Seeding](#migrations-and-seeding)
 - [Usage](#usage)
 - [Run rspec tests](#run-rspec-tests)
+- [IsbnConverterService Explanation](#isbnconverterservice-explanation)
+- [Model Explanations](#models-explanation)
+- [Controller Explanations](#controllers-explanation)
 
 ## Requirements
 
